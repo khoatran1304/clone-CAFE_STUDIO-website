@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* section default setting */
+.home, 
+.concept,
+.info,
+.footer{
+    height: 100vh;    
+}
+
+.menu{
+    /* 10vh for tab bar */
+    height: 190vh;
+}
+
+
+

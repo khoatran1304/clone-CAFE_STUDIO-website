@@ -1,0 +1,49 @@
+.info{
+    background-image: url('https://cafestudiobakery.tokyo/img/shopinfo_bg01@2x.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__card{
+    width: 33.33%;
+    height: 60%;
+    background-color: white;
+    box-shadow: 0 7px 21px 0 rgba(0,0,0,.5);
+    display: flex;
+    flex-flow: column;
+    /* opacity: .8; */
+}
+.info__card-img{
+    height: 60%;
+    width: 100%;
+}
+.info__card-img > img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.info__card-content{
+    background-color: #140500;
+    padding: 5% 0%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.info__card-links{
+    margin-top: 5%;
+    color: white;
+}
+
+.info__card-links > a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+

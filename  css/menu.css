@@ -1,0 +1,192 @@
+.menu{
+    background-color: burlywood;
+}
+
+.menu__header{
+    display: flex;
+    height: 25vh;
+}
+
+.menu__header-item{
+    width: 50%;
+    align-self: center;
+}
+
+.menu__header-item:nth-child(1){
+    text-align: center;
+}
+
+.menu__header-item > button{
+    display: inline-block;
+    width: 25%;
+    height: 45px;
+    margin: 0px 40px;
+    border-radius: 50px;
+    border-width: 0px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.menu__list{
+    display: flex;
+    height: 65vh;
+    background-color: black;
+}
+
+.menu__list-item{
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu__list-item > p{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    top: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.menu__list-img:hover{
+    transform: scale(1.2);
+}
+
+.menu__list-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cafestudiobakery.tokyo/img/menu_bg01@2x.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+
+
+.menu__tab-cate{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background-image: url('https://cafestudiobakery.tokyo/img/nav_bg@2x.jpg');
+    background-size: cover;
+    
+    height: 10vh;
+}
+
+
+.menu__tab-cate > a {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    color: black;
+    text-decoration: 2px underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    background-color:transparent;
+}
+
+/* mockup */
+.menu__tab-cate > a:nth-child(1){
+    background-color: white;
+}
+
+
+
+/* list */
+.menu__tab-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+    background-color: white;
+}
+
+.menu__tab-content{
+    height: 50vh;
+    width: 100%;
+    background-color: transparent;
+
+    /* display: grid; */
+    display: none;
+    grid-template-columns: 15% 85%;
+}
+
+.tab__active{
+    display: grid;
+}
+
+.menu_tab-time{
+    writing-mode: vertical-lr;
+    text-align: center;
+
+    padding-left: 20px;
+}
+
+.menu_tab-time > p {
+    color: black;
+}
+
+.menu__tab-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-columns: 50%;
+    /* justify-items: stretch; */
+    /* align-items: center; */
+    overflow-x: scroll;
+    /* background-color: red; */
+}
+
+.menu__tab-row{
+    flex-grow: 1;
+    place-self: center stretch;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    /* background-color: aqua; */
+}
+
+.menu__row-thumb{
+    width: 180px;
+    height: 100%;
+}
+
+.menu__row-thumb > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.menu__row-content{
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu__row-content > p{
+    color: black;
+    
+}
+
+.menu__row-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.menu__row-price{
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu__row-detail{
+    font-size: 15px;
+}

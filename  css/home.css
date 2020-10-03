@@ -1,0 +1,28 @@
+
+/* Home section */
+.home{
+    background-image: url('../assets/hero-1.jpg');
+    background-size: cover;
+}
+
+.home__hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.home__hero-content{
+    text-align: center;
+}
+
+.home__hero-content > h1{
+    font-size: 4em;
+    color: white;
+}
+
+.home__hero-content > p{
+    /* margin-top: 3em; */
+    font-size: 1.2em;
+}
+

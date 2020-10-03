@@ -1,0 +1,167 @@
+.navbar-min{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20,13,9,.96); 
+    z-index: 1000; 
+}
+.navbar-min__links{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 385px;
+}
+
+.navbar-min__links li a{
+    font-size: 1.2em;
+}
+
+.navbar-min--active{
+    display: flex;
+}
+
+@media only screen and (max-width: 1100px) {
+    /* Nav bar */
+    .header__navbar-cates, .header__navbar-links{
+        display: none;
+    }
+
+    .header__navbar-logo{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .header__navbar-logo a{
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: .2em .5em;
+        border: .1em dashed;
+    }
+    /* Concept */
+    .concept{
+        flex-direction: column-reverse;
+
+    }
+    
+    .concept__left{
+        height: 60%;
+        width: 100vw;
+        /* background-image: url('../assets/concept-1.jpg');
+        background-size: cover; */
+    }
+    .concept__right{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat; */
+        height: 40%;
+        width: 100vw;
+    }
+
+    /* Menu */
+    .menu{
+        height: 200vh;
+    }
+    .menu__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 25vh;
+    }
+
+    
+    .menu__header-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__header-item:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    .menu__list{
+        height: 75vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu__list-item > p{
+        /* position: absolute;
+        display: block;
+        text-align: center;
+        width: 100%; 
+        font-weight: bold;
+        z-index: 100;
+        */
+        top: 40px;
+        font-size: 1.2em;
+    }
+    
+    .menu__tab-wrapper{
+        display: block;
+        background-color: white;
+    }
+
+    .menu__tab-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .menu_tab-time{
+        writing-mode: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        
+    }
+
+    .menu_tab-time > p {
+        /* color: black; */
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .menu__tab-container{
+        /* display: grid; */
+        grid-auto-flow: row; 
+        grid-template-columns: 100%;
+        overflow-y: auto;
+        row-gap: 2%;
+        
+        /* Chỗ này cần làm lại kĩ */
+    }
+
+    /* Info */
+    .info__card{
+        width: 80%;
+        height: 80%;
+        /* background-color: white;
+        box-shadow: 0 7px 21px 0 rgba(0,0,0,.5);
+        display: flex;
+        flex-flow: column; */
+    }
+
+
+    /* footer */
+    
+    /* scrollbar */
+    .scrollbar{
+        width: 50%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+  }
